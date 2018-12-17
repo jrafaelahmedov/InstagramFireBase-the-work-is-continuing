@@ -193,14 +193,14 @@
                     android:layout_height="35dp"
                     android:src="@drawable/ic_phone"
                     android:layout_centerVertical="true"
-                    android:id="@+id/phoneNumber"/>
+                    android:id="@+id/phone_number"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/editTextPhoneNumber"
                     android:layout_centerVertical="true"
-                    android:layout_toRightOf="@id/phoneNumber"
+                    android:layout_toRightOf="@id/phone_number"
                     android:background="@color/white"
                     android:inputType="textNoSuggestions"
                     android:hint="PhoneNumber"/>

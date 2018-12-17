@@ -1,18 +1,11 @@
 package com.example.rmaahmadov.instagramclone.utils;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.example.rmaahmadov.instagramclone.R;
-import com.example.rmaahmadov.instagramclone.home.HomeActivity;
-import com.example.rmaahmadov.instagramclone.login.RegisterActivity;
 import com.example.rmaahmadov.instagramclone.models.User;
-import com.example.rmaahmadov.instagramclone.models.UserAccountSettings;
-import com.example.rmaahmadov.instagramclone.models.UserSettings;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -20,11 +13,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.MutableData;
-import com.google.firebase.database.Transaction;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -208,16 +198,5 @@ public class FireBaseMethods {
             }
         });
     }
-
-
-    private UserSettings userAccountSetting(DataSnapshot dataSnapshot) {
-        UserAccountSettings userAccountSettings = new UserAccountSettings();
-        User user = new User();
-
-        for (DataSnapshot ds : dataSnapshot.getChildren()) {
-                if(ds.getKey().equals("user_account_settings")){
-
-                }
-        }
-    }
+    
 }
